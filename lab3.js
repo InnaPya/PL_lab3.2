@@ -1,4 +1,5 @@
 var request = require('request');
+var fs = require('fs');
 var str = "";
 request('https://api.meetup.com/2/open_events?and_text=False&country=us&offset=0&city=Boston&format=json&lon=-71.0&limited_events=False&topic=technology&state=ma&photo-host=public&page=20&radius=25.0&lat=42.0&desc=False&status=upcoming&sig_id=216657279&sig=ccb1a0f4db5045c31835161ebda65eb33db5a7e9', function (err,res,body) {
 	if (err) throw err;
